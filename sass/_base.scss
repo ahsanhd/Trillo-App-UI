@@ -26,15 +26,19 @@ Grey dark 3: #999
     --color-Primary-dark: #BA265D;
 
 
-    --color-Grey-light-1: #faf9f9;
-    --color-Grey-light-2: #f4f2f2;
-    --color-Grey-light-3: #f0eeee;
-    --color-Grey-light-4: #ccc;
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
 
     //FONT COLORS
-    --color-Grey-dark-1: #333;
-    --color-Grey-dark-2: #777;
-    --color-Grey-dark-3: #999;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    // BOX SHADOW
+    
+    --box-shadow-1:rgba(0, 0, 0,.5);
 
 }
 
@@ -45,12 +49,14 @@ Grey dark 3: #999
 }
 
 html {
+    
     box-sizing: border-box;
     font-size: 62.5%;               // 10px, (10px/16px)*100=62.5%
 }
 
 
 body {
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -59,6 +65,5 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-
 
 }
