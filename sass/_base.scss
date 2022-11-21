@@ -39,6 +39,10 @@ Grey dark 3: #999
     // BOX SHADOW
     
     --box-shadow-1:rgba(0, 0, 0,.5);
+    --box-shadow-2:0 2rem 5rem rgba(0,0,0,.105);
+
+    //LINE (BORDER BOTTOM)
+    --line:1px solid var(--color-grey-light-2);
 
 }
 

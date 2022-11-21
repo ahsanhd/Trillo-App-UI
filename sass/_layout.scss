@@ -1,7 +1,7 @@
 .header {
 height: 7rem;
 background-color: #fff;
-border-bottom: 1px solid var(--color-grey-light-2);
+border-bottom: var(--line);
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -12,7 +12,7 @@ align-items: center;
     max-width: 120rem;
     margin: 8rem auto;
     min-height: 50rem;
-    box-shadow: 0rem 4rem 6rem var(--box-shadow-1);
+    box-shadow:var(--box-shadow-1);
 }
 
 .content {
@@ -30,6 +30,28 @@ align-items: center;
 
 .hotel-view {
     flex: 1;
-    height: 80rem;
+    
+
+}
+
+.detail {
+    display: flex;
+    font-size: 1.4rem;
+    padding: 3rem;
+    background-color: var(--color-grey-light-2);
+    border: var(--line);
+    box-shadow: var( --box-shadow-2);
+}
+
+.description {
+    font-size: inherit;
+    flex: 0 0 60%;
+    margin-right: 3rem;
+    padding: 3rem;
+}
+
+.user-review {
+    background-color: yellowgreen;
+    flex: 1;
 
 }
