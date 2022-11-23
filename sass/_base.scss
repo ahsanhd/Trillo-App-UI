@@ -46,6 +46,19 @@ Grey dark 3: #999
 
 }
 
+
+    //BREAKPOINTS FOR MEDIA QUIRIES (we can not use css variables for media quieries CSS doesnt allow it so we are using SASS variables)
+    
+    $bp-largest: 75em;        // 1200px 1200/16=75em
+    $bp-large: 68.75em;       // 1100px 
+    $bp-big: 62.5em;       // 1000px 
+    $bp-medium: 50em;       // 800px
+    $bp-small: 37.5em;           //600px
+    $bp-smallest: 31.25em;           //500px
+
+
+       
+
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +69,11 @@ html {
     
     box-sizing: border-box;
     font-size: 62.5%;               // 10px, (10px/16px)*100=62.5%
+
+    @media only screen and (max-width:$bp-big) {
+        font-size: 50%;
+
+    }
 }
 
 
