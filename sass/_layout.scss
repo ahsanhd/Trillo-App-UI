@@ -48,10 +48,14 @@ align-items: center;
     flex: 0 0 60%;
     margin-right: 3rem;
     padding: 3rem;
+    background-color: #fff;
+    box-shadow: var( --box-shadow-2);
 }
 
 .user-review {
-    background-color: yellowgreen;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
