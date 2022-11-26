@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    position: relative;
 
     @media only screen and (max-width:$bp-smallest) {
         order: 1;
@@ -25,7 +26,7 @@
     &__input {
         font-family: inherit;
         font-weight: inherit;
-        font-size: inherit; 
+        font-size: 1.6rem; 
         color: inherit;
         background-color: var(--color-grey-light-2);
         border: none;
@@ -34,6 +35,7 @@
         margin-right: -3.25rem;
         width: 90%;
         transition: all .2s;
+        
 
         &::-webkit-input-placeholder {
             font-size: 1.5rem;
@@ -46,6 +48,37 @@
             width: 100%;
             background-color: var(--color-grey-light-3);
         }
+
+    }
+
+    &__suggestion {
+        width: 80%;
+        height: 7vh;
+        padding: .5rem 1.8rem;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 138%;
+        left: 4%;
+        background-color: var(--color-grey-light-3);
+        box-shadow: 0 1rem 1rem var(--box-shadow-2);
+        border-radius: 1rem;
+        z-index: 20;
+        display: none;
+
+    }
+
+    &__suggestion-item {
+        list-style: none;
+        color: var(--color-grey-dark-2);
+        cursor: pointer;
+        
+        &:hover {
+            background-color: var(--color-grey-light-4);
+        }
+    }
+
+    &__input:focus ~ &__suggestion {
+        display: block;
     }
 
     &__input + &__button:focus {
@@ -250,11 +283,57 @@
 /// GALLERY 
 .gallery {
     display: flex;
+    position: relative;
+
     &__photo {
         width: 100%;
         display: block;
+        transition: all .4s;
+
+        &:hover {
+            transform: scale(1.04);
+            filter: blur(1px) brightness(80%);
+
+        }
+    }
+
+    &__caption {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #fff;
+        position: absolute;
+        transform: translate(-50%, -30%);
+       
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+
+        &--1 {
+            top: 20%;
+            left: 15%;
+        }
+
+        &--2 {
+            top: 20%;
+            left: 50%;
+
+        }
+
+        &--3 {
+            top: 20%;
+            left: 80%;
+        }
+
+    }
+
+    &__photo:hover ~ &__caption {
+        opacity: 1;
+        top: 50%;
     }
 }
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// HOTEL OVERVIEW 

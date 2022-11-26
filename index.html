@@ -18,6 +18,12 @@
             
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search hotels">
+                    <div class="search__suggestion">
+                        <li class="search__suggestion-item">Room for 1 Person</li>
+                        <li class="search__suggestion-item">Hotel For the whole family</li>
+                        <li class="search__suggestion-item">Room for 3 Persons</li>
+                        <li class="search__suggestion-item">Master Bed</li>
+                    </div>
                     <button class="search__button">
                         <svg class="search__icon">
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -104,12 +110,15 @@
                     <gallery class="gallery">
                         <figure class="gallery__item">
                             <img src="img/hotel-1.jpg" alt="Photo of Hotel 1" class="gallery__photo">
+                            <figcaption class="gallery__caption gallery__caption--1">Night sky View</figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-2.jpg" alt="Photo of Hotel 2" class="gallery__photo">
+                            <figcaption class="gallery__caption gallery__caption--2">Sunny Swimming Pool </figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-3.jpg" alt="Photo of Hotel 3" class="gallery__photo">
+                            <figcaption class="gallery__caption gallery__caption--3">Beautiful Mountain View</figcaption>
                         </figure>
                     </gallery>
                     <div class="overview">
@@ -218,7 +227,7 @@
                     </div>
                     <div class="cta">
                         <h2 class="cta__heading">
-                            Congratulations! We Have four rooms available Right now!
+                            Good news! we have 4 free rooms for your selected dates!
                         </h2>
                         <button class="btn">
                             <span class="btn__visible">
